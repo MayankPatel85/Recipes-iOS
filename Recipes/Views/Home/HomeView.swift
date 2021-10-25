@@ -77,8 +77,7 @@ struct HomeView: View {
             }
         }
         .overlay(networkManager.isLoading ? ProgressView("LOADING") : nil)
-        //.transition(.scale(scale: 0.01, anchor: .center))
-        
+        .navigationBarHidden(true)        
     }
     
 }

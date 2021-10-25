@@ -63,10 +63,11 @@ struct RecipeDetail: View {
                 }
                 .overlay(networkManager.isLoading ? ProgressView("LOADING") : nil)
             }
-            .navigationBarTitle(recipe!.title, displayMode: .inline)
-            .onAppear {
-                networkManager.fetchInstruction(id: recipe!.id)
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitle(recipe!.title)
+        .onAppear {
+            networkManager.fetchInstruction(id: recipe!.id)
         }
     }
 }

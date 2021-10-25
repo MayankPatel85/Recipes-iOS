@@ -2,12 +2,7 @@
 //  SelectedRecipeModel.swift
 //  Recipes
 //
-<<<<<<< HEAD
 //  Created by MΔΨΔΠҜ PΔTΣL on 01/09/21.
-=======
-//  Created by MΔΨΔΠҜ PΔTΣL on 02/09/21.
->>>>>>> ea22d3b8b4c222ed43e8b7788bc72e5f36d4b6f9
-//
 
 import Foundation
 
