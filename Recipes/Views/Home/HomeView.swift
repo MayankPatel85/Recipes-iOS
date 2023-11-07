@@ -21,7 +21,7 @@ struct HomeView: View {
         
         recipeCards
             .onAppear {
-//                self.networkManager.fetchData()
+                self.networkManager.fetchData()
             }
     }
     
