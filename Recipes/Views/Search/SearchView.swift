@@ -48,7 +48,7 @@ struct SearchView: View {
                 .padding(16)
                 .frame(maxWidth: .infinity)
             }
-            .navigationTitle("Search")
+//            .navigationTitle("Search")
         }
         .edgesIgnoringSafeArea(.top)
     }

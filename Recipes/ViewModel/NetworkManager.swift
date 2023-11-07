@@ -32,7 +32,7 @@ class NetworkManager: ObservableObject {
     
     func fetchData() {
         self.isLoading = true
-        guard let url = URL(string: "https://api.spoonacular.com/recipes/random?apiKey=\(apiKey)&number=6") else { return }
+        guard let url = URL(string: "https://api.spoonacular.com/recipes/random?apiKey=\(apiKey)&number=2") else { return }
         downloadData(url: url) { data in
             guard let data = data else { return }
             do {
@@ -117,22 +117,4 @@ class NetworkManager: ObservableObject {
         }
     }
     
-//    func generatePlan(targetCalories: Int) {
-//        self.isLoading = true
-//        guard let url = URL(string: "https://api.spoonacular.com/mealplanner/generate?apiKey=\(apiKey)&timeFrame=day&targetCalories=\(targetCalories)") else { return }
-//        URLSession.shared.dataTask(with: url) { (data, _, error) in
-//            guard let data = data else { return }
-//            //print(data)
-//            do {
-//                let result = try JSONDecoder().decode(Planner.self, from: data)
-//                //print(result)
-//                DispatchQueue.main.async {
-//                    self.generatedPlan = result.meals
-//                    self.isLoading = false
-//                }
-//            }catch {
-//                print(error)
-//            }
-//        }.resume()
-//    }
 }

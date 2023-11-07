@@ -56,6 +56,7 @@ struct TabBarView: View {
                 SelectedRecipeDetail(selectedRecipe: selectedRecipeModel, networkManager: networkManager, namespace: animation)
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

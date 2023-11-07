@@ -21,7 +21,7 @@ struct HomeView: View {
         
         recipeCards
             .onAppear {
-                self.networkManager.fetchData()
+//                self.networkManager.fetchData()
             }
     }
     
@@ -63,7 +63,7 @@ struct HomeView: View {
                                     .cornerRadius(20)
                                     .padding()
                                     .onTapGesture {
-                                        withAnimation(.spring(response: 0.5, dampingFraction: 0.7, blendDuration: 0)) {
+                                        withAnimation(.interactiveSpring(response: 0.5, dampingFraction: 0.8)) {
                                             //show.toggle()
                                             selectedRecipeModel.isShowing.toggle()
                                             selectedRecipeModel.recipe = item
